@@ -370,10 +370,13 @@
                   <div class="formgroup">
                     <textarea placeholder="Message"></textarea>
                   </div>
-                  <button class="contact__form-btn" type="submit">
+                  <!-- <button class="contact__form-btn" type="submit">
                     Send
-                  </button>
+                  </button> -->
                 </form>
+                <button class="contact__form-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Send
+                </button>
               </div>
             </div>
           </div>
@@ -405,7 +408,7 @@
                     <input type="text" placeholder="Your Name">
                     <input type="text" placeholder="Email">
                   </div>
-                  <button>
+                  <button class="mailinglist__form-btn">
                     Subscribe!
                   </button>
                 </form>
@@ -509,6 +512,30 @@
     </footer> 
 
   </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="modal__title">
+            Thank You!</br>
+            Your message has been sent.
+          </div>
+          <div class="modal__text">
+            We will contact You as soon as it possible!
+          </div>
+          <div class="redbtn">
+            <a href="index.html">Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <script src="js/lib/jquery.js"></script>
